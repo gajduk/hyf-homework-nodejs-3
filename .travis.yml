@@ -8,6 +8,7 @@ before_install:
 
 before_script:
   - npm install
+  - npx cypress install
 
 script:
-  - exit 0
+  - npm run ci:test
